@@ -47,7 +47,7 @@ public class DriverFactory {
         ChromeOptions options = new ChromeOptions();
         if(ConstantGlobal.HEADLESS == true){
             options.addArguments("--headless=new");
-            options.addArguments("window-size=1920,1080");
+            options.addArguments("window-size=1800,900");
         }
 
         WebDriver driver = new ChromeDriver(options);
@@ -63,7 +63,7 @@ public class DriverFactory {
         EdgeOptions options = new EdgeOptions();
         if(ConstantGlobal.HEADLESS == true){
             options.addArguments("--headless=new");
-            options.addArguments("window-size=1920,1080");
+            options.addArguments("window-size=1800,900");
         }
 
         WebDriver driver = new EdgeDriver(options);
@@ -80,7 +80,7 @@ public class DriverFactory {
         FirefoxOptions options = new FirefoxOptions();
         if(ConstantGlobal.HEADLESS == true){
             options.addArguments("--headless");
-            options.addArguments("window-size=1920,1080");
+            options.addArguments("window-size=1800,900");
         }
         driver.manage().window().maximize();
         return driver;
