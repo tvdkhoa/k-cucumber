@@ -2,9 +2,7 @@ package khoatester.com.listeners;
 
 import khoatester.com.helpers.CaptureHelper;
 import khoatester.com.helpers.PropertiesHelper;
-import khoatester.com.reports.AllureManager;
-import khoatester.com.reports.ExtentReportManager;
-import khoatester.com.reports.ExtentTestManager;
+
 import khoatester.com.utils.LogUtils;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
