@@ -1,18 +1,14 @@
 package khoatester.com.steps;
 
-import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import khoatester.com.drivers.DriverManager;
 import khoatester.com.hooks.TestContext;
 import khoatester.com.pageobjects.CategoryPage;
 import khoatester.com.pageobjects.CommonPage;
 import khoatester.com.pageobjects.LoginCMSPage;
 import khoatester.com.reports.AllureManager;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 
 public class CommonSteps {
