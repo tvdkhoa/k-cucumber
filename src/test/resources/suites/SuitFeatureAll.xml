@@ -3,7 +3,7 @@
 <suite name ="All Test Suite" parallel="classes" thread-count="10">
     <test name = "Run Gherkin">
         <classes>
-            <class name=""></class>
+            <class name="khoatester.com.runners.RunCucumberTests"></class>
         </classes>
     </test>
 </suite>

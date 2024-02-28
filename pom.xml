@@ -52,7 +52,7 @@
 
 
         <!-- Suite XML path -->
-        <suite.feature>src/test/resources/suites/demoTestSuite.xml</suite.feature>
+        <suite.feature>src/test/resources/suites/SuitFeatureAll.xml</suite.feature>
 
     </properties>
 
@@ -343,6 +343,7 @@
                         <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <suiteXmlFiles>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <suiteXmlFile>${suite.feature}</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
@@ -374,7 +375,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- Call Suite name global set up above -->
-                        <suiteXmlFile>src/test/resources/suites/demoTestSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>${suite.feature}</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
