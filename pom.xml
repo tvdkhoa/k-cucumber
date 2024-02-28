@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ktest.com</groupId>
-    <artifactId>ktest-cucumber-testng</artifactId>
+    <groupId>demoAutomation</groupId>
+    <artifactId>cucumber-testng</artifactId>
     <version>1.7.0</version>
-    <name>TestAutomationFrameworkCucumberTestNG</name>
+    <name>k-cucumber</name>
     <url>https://github.com/tvdkhoa/k-cucumber</url>
 
     <properties>
@@ -52,12 +52,8 @@
 
 
         <!-- Suite XML path -->
-        <suite.signin.parallel>src/test/resources/suites/SignIn-parallel-methods.xml</suite.signin.parallel>
-        <suite.signin.simple>src/test/resources/suites/SignIn-simple.xml</suite.signin.simple>
-        <suite.client.parallel>src/test/resources/suites/Clients-parallel.xml</suite.client.parallel>
-        <suite.client.simple>src/test/resources/suites/Clients-simple.xml</suite.client.simple>
-        <suite.feature>src/test/resources/suites/SuiteFeatureByTag.xml</suite.feature>
-        <suite.feature.login.cms>src/test/resources/suites/SuiteFeatureLoginCMS.xml</suite.feature.login.cms>
+        <suite.feature>src/test/resources/suites/demoTestSuite.xml</suite.feature>
+
     </properties>
 
     <dependencies>
@@ -378,7 +374,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- Call Suite name global set up above -->
-                        <suiteXmlFile>src/test/resources/suites/SuiteFeatureLoginCMS.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/suites/demoTestSuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
