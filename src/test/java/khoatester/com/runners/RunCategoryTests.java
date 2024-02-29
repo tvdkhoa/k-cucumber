@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
         plugin = {"pretty", "html:target/cucumber-html-report.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 )
 @Test
-public class RunCucumberTests extends AbstractTestNGCucumberTests {
+public class RunCategoryTests extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = false)
     public Object[][] scenarios() {
